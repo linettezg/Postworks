@@ -12,12 +12,12 @@ mongo_R$insert(match)
 mongo_R$count()
 
 #Consulta - No. de goles del Real Madrid el 20-12-2015 y 
-#contra qué equipo jugó
+#contra quÃ© equipo jugÃ³
 mongo_R$find('{"HomeTeam":"Real Madrid", "Date":"2015-12-20"}')
 
 #Agregar dataset mtcars a la BDD
-mongo_R = mongo(collection = "mtcars", db = "mtcars") 
+mongo_R = mongo(collection = "mtcars", db = "mtcars_db") 
 mongo_R$insert(mtcars)
 
-#Cerrar conexión con la BDD
+#Cerrar conexiÃ³n con la BDD
 rm(mongo_R)
